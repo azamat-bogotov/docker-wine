@@ -382,11 +382,11 @@ run_container () {
 
 # Set default values
 CONTAINER_NAME="wine"
-DOCKER_IMAGE="scottyhardy/docker-wine"
+DOCKER_IMAGE="azamatbogotov/wine"
 DOCKER_PULL_IMAGE="yes"
 HOST_RDP_PORT="3389"
 IMAGE_TAG="latest"
-LOCAL_IMAGE="docker-wine"
+LOCAL_IMAGE="wine"
 NO_RDP="no"
 NO_USER_VOLUME="no"
 NOTTY="no"

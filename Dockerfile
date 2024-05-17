@@ -23,6 +23,9 @@ RUN apt-get update \
         winbind \
         xvfb \
         zenity \
+        nano \
+        libcanberra-gtk-module \
+        libcanberra-gtk3-module \
     && rm -rf /var/lib/apt/lists/*
 
 # Install wine
