@@ -261,3 +261,12 @@ To test sound, try using `pacat`:
 ```bash
 ./docker-wine pacat -vv /dev/urandom
 ```
+
+
+## Fix MIT-SHM error
+
+Disable MIT-SHM for fix autoclose X11 session error:
+
+```bash
+echo -e "Section \"Extensions\"\n    Option \"MIT-SHM\" \"Disable\"\nEndSection" | sudo tee /etc/X11/xorg.conf.d/disable-MIT-SHM.conf
+```
