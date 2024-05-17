@@ -373,7 +373,7 @@ run_container () {
 
     # NOTTY rules them all
     if [ "${NOTTY}" == "yes" ] ; then
-        docker run "${RUN_ARGS[@]}" "${DOCKER_IMAGE}:${IMAGE_TAG}" "${CMD_ARGS[@]}"
+        docker run --detach  "${RUN_ARGS[@]}" "${DOCKER_IMAGE}:${IMAGE_TAG}" "${CMD_ARGS[@]}"
     else
         docker run "${mode}" "${RUN_ARGS[@]}" "${DOCKER_IMAGE}:${IMAGE_TAG}" "${CMD_ARGS[@]}"
     fi

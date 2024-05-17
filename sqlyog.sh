@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./docker-wine wine .wine/drive_c/Program\ Files/SQLyog/SQLyog.exe
+./docker-wine --notty wine .wine/drive_c/Program\ Files/SQLyog/SQLyog.exe
 exit 0
